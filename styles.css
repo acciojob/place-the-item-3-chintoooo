@@ -1,2 +1,13 @@
 
 /* Your CSS Code here. */
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.holder > * {
+  flex: 1 1 200px; /* Each item takes at least 200px and can grow if space allows */
+  margin: 10px; /* Adds some space between the elements */
+  box-sizing: border-box; /* Ensures padding and borders are included in the width */
+}
